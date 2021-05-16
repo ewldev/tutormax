@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: WorkSans-Regular
+font link: https://fonts.google.com/specimen/Work+Sans
+font author: Wei Huang
+font author site: 
+
+
+icon designer: Rockicon
+icon designer link: /rockicon
+        
+{"bg":"#1AB5E6","icon":"#EBC246","font":"#ffffff","slogan":"#ffffff"}
+      
