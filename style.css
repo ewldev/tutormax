@@ -56,6 +56,20 @@ nav ul li a {
   margin: .25em;
 }
 
+/* login button */
+.login {
+  background-color: #feac32;
+  background-image: linear-gradient(#fecc4c,#ffac33);
+  border: 1px solid #feac32;
+  transition: all .2s;
+}
+.login:hover {
+  background-color:  #fecc4c;
+  background-image: none;
+  color: orangered;
+}
+
+
 .brand-img {
   width: 70%;
   margin: 25px auto; 
@@ -95,7 +109,7 @@ nav ul li a {
   border: 3px solid #feac32;
   color: #2a2e31;
   /* color: #0a0a23; */
-  transition: all 0.2s;
+  transition: all .2s;
 }
 .home-btn:hover {
   background-color:  #fecc4c;
@@ -149,7 +163,7 @@ nav ul li a {
 @media screen and (min-width: 1194px){
   header {
     background-color:  #7bcaff;
-    box-shadow: 0 6px 5px gray;
+    box-shadow: 0 1px 10px gray;
     padding-bottom: 10px;
     margin-bottom: 40px;
     }
@@ -159,7 +173,28 @@ nav ul li a {
     float: right;
     margin: 35px 40px 0 0;
   }
+
+  nav ul li a:link, nav ul li a:visited {
+    border: .15em solid;
+    color: white;
+    font-size: 1.2em;
+    transition: all .2s;
+  }
+  nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+    border: .15em solid;
+    color: #ffac33;
+    /* font-size: 1.3em; */
+  }
   
+  .login {
+    color: white;
+    transition: all .2s;
+  }
+  .login:hover {
+    border: .15em solid #feac32;
+    color: orangered;
+  }
+
   .brand-img {
     width: 20%;
     display: inline;
