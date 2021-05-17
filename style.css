@@ -110,6 +110,7 @@ nav ul li a {
 }
 
 @media screen and (min-width: 400px) {
+  
   nav ul li {
     flex: none;
   }
@@ -146,25 +147,29 @@ nav ul li a {
 }
 
 @media screen and (min-width: 1194px){
-  #container {
-    max-width: 1200px;
-    margin: auto;
-  }
-
   header {
-      margin-bottom: 50px;
-  }
+    background-color:  #7bcaff;
+    box-shadow: 0 6px 5px gray;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    }
+  
   nav ul {
     /* justify-content:flex-end; */
     float: right;
     margin: 35px 40px 0 0;
   }
-
+  
   .brand-img {
-    width: 30%;
+    width: 20%;
     display: inline;
-    margin: 40px 0 0 40px;
+    margin: 30px 0 0 200px;
   } 
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
 
   .text-container {
     float: left;
@@ -195,6 +200,7 @@ nav ul li a {
     width: 550px;  
     margin: 160px 0 0 100px;
   }
+
 }
 
 
