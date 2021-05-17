@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-  font-size: .8em;
+  font-size: .9em;
   text-transform: uppercase;
   letter-spacing: .2em;
   flex: 1 1 50%;  
@@ -165,7 +165,7 @@ nav ul li a {
     background-color:  #7bcaff;
     box-shadow: 0 1px 10px gray;
     padding-bottom: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     }
   
   nav ul {
@@ -177,13 +177,12 @@ nav ul li a {
   nav ul li a:link, nav ul li a:visited {
     border: .15em solid;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.05em;
     transition: all .2s;
   }
   nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
     border: .15em solid;
     color: #ffac33;
-    /* font-size: 1.3em; */
   }
   
   .login {
@@ -214,7 +213,7 @@ nav ul li a {
     width: 500px;
     font-size: 2.3em;
     line-height: 1.5em;
-    margin: 0 0 30px 40px;
+    margin-left: 40px;
     }
   
   .text {  
