@@ -13,9 +13,13 @@ body {
   font-family: Lato, sans-serif;
   color: #54575A;
   font-size: 100%;
+  margin: 0;
+}
+
+#intro {
   background: linear-gradient(to bottom, #FFFFFF 0%, #7bcaff 100%);
   /* background: linear-gradient(to bottom, #FFFFFF 0%, #6395b6 49.91%, #4895c8 94.19%); */
-  margin: 0;
+  height: 800px;  
 }
 
 /* nav styles */
@@ -138,6 +142,10 @@ nav ul li a {
 
 
 @media screen and (min-width: 600px) {
+  #intro{
+    height: 1000px;
+  }
+
   .brand-img {
     width: 50%;
     margin: 40px auto; 
@@ -161,6 +169,10 @@ nav ul li a {
 }
 
 @media screen and (min-width: 1194px){
+  #intro{
+    height: 850px;
+  }
+
   header {
     background-color:  #7bcaff;
     box-shadow: 0 1px 10px gray;
