@@ -102,7 +102,7 @@ nav ul li a {
   justify-content: center;
 }
 .home-btn {
-  width: 130px;
+  width: 138px;
   text-decoration: none;
   text-align: center;
   padding: .5em 1em; 	
@@ -180,6 +180,13 @@ nav ul li a {
   }
 
   header {
+    
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+    
     background-color:  #7bcaff;
     box-shadow: 0 1px 10px gray;
     padding-bottom: 10px;
