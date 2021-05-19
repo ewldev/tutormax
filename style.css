@@ -19,7 +19,7 @@ body {
 #intro {
   background: linear-gradient(to bottom, #FFFFFF 0%, #7bcaff 100%);
   /* background: linear-gradient(to bottom, #FFFFFF 0%, #6395b6 49.91%, #4895c8 94.19%); */
-  height: 800px;  
+  height: 850px;  
 }
 
 /* nav styles */
@@ -141,7 +141,7 @@ nav ul li a {
 }  
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   #intro{
     height: 1000px;
   }
@@ -168,7 +168,13 @@ nav ul li a {
   }
 }
 
-@media screen and (min-width: 1194px){
+@media screen and (min-width: 992px){
+  #intro{
+    height: 1100px;
+  }
+}
+
+@media screen and (min-width: 1200px){
   #intro{
     height: 850px;
   }
@@ -238,7 +244,7 @@ nav ul li a {
 
   .buttons {
     justify-content: left; 
-    margin: 0 0 180px 80px;
+    margin: 0 0 0 80px;
   }
 
   .main-image-container img {
