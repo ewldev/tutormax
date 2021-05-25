@@ -85,7 +85,7 @@ nav ul li a {
   background-image: linear-gradient(#fecc4c,#ffac33);
   border: 1px solid #feac32;
   transition: all .2s;
-  margin-right: 2px;
+  margin-right: 3px;
 }
 .login:hover {
   background-color:  #fecc4c;
@@ -153,20 +153,20 @@ nav ul li a {
 }  
 
 @media screen and (min-width: 576px) {
-  #intro{
+  /* #intro{
     height: 1000px;
-  }
+  } */
 
-  .brand-img {
+  /* .brand-img {
     width: 80%;
     display: block;
     margin: 0 auto;
-  }
+  } */
   
   .title {
     width: 55%;
     padding-bottom: 1.5em;  
-  }   
+  }
   
   .text {
     width: 55%;
