@@ -41,13 +41,6 @@ nav, footer, .home-btn1, .home-btn2 {
   font-family: 'Work Sans', sans-serif;
 }
 
-nav ul li a:link, nav ul li a:visited {
-  color: rgb(60, 192, 245);
-}
-nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
-  color: #F9AB33;
-}
-
 nav ul li {
   font-size: .9em;
   text-transform: uppercase;
@@ -108,6 +101,7 @@ nav ul li a {
   justify-content: center;
 }
 .home-btn {
+  color: #2a2e31;
   width: 138px;
   text-decoration: none;
   text-align: center;
@@ -117,8 +111,6 @@ nav ul li a {
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c,#ffac33);
   border: 3px solid #feac32;
-  color: #2a2e31;
-  /* color: #0a0a23; */
   transition: all .2s;
 }
 .home-btn:hover {
@@ -147,19 +139,10 @@ nav ul li a {
 }  
 
 @media screen and (min-width: 576px) {
-  /* #intro{
-    height: 1000px;
-  } */
-
-  /* .brand-img {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-  } */
-  
   .title {
     width: 55%;
     padding-bottom: 1.5em;  
+    margin-top: 40px;
   }
   
   .text {
@@ -175,16 +158,34 @@ nav ul li a {
 }
 
 @media screen and (min-width: 768px){
+  nav ul li {
+    margin: 0 5px;
+  }
+  nav ul li a {
+    margin: 0;
+}
   .signup {
     border: 1px solid rgb(254, 172, 50);
     border-radius: .5em; 
+    color: orange;
   }
-}  
+  .signup:hover {
+    background-color:  #fecc4c;
+    background-image: none;
+    color: red;
+  }
+}
 
 @media screen and (min-width: 992px){
   #intro{
-    height: 1100px;
+    height: 950px;
   }
+
+  .brand-img {
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 230px; 
+  } 
 }
 
 @media screen and (min-width: 1200px){
@@ -199,30 +200,26 @@ nav ul li a {
     margin-bottom: 70px;
     }
   
-  nav ul li a:link, nav ul li a:visited {
-    border: .15em solid;
+  .brand-img {
+      margin-left: 150px;
+      width: 280px; 
+  }     
+      
+  nav ul li a {
     color: white;
-    font-size: .9em;
     transition: all .2s;
   }
-  nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
-    border: .15em solid;
+  nav ul li a:hover {
     color: #ffac33;
   }
-  
+   
   .login {
     color: white;
     transition: all .2s;
   }
   .login:hover {
-    /* border: .1em solid #feac32; */
     color: orangered;
   }
-
-  .brand-img {
-   width: 230px; 
-   /* margin: 30px auto 0 100px;  */
-  } 
 
   main {
     max-width: 1200px;
