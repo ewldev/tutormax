@@ -48,24 +48,18 @@ nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
   color: #F9AB33;
 }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  /* overflow: hidden;  */  
-}
-
 nav ul li {
   font-size: .9em;
   text-transform: uppercase;
   letter-spacing: .2em;
-  flex: 1 1 50%;  
 }
 
 nav ul li a {
   margin: .25em;
+}
+
+.navbar-collapse {
+  flex-grow: unset;
 }
 
 /* login button */
@@ -73,14 +67,12 @@ nav ul li a {
   font-size: .9em;
   text-transform: uppercase;
   letter-spacing: .1em;
-  /* flex: 1 1 50%; */
   display: block;
   text-decoration: none;
-  /* text-align: center; */
   border: 1px solid; 
   padding: .5em 1em; 	
   border-radius: .5em; 
-  /* margin: .25em;   */
+  margin: .25em;  
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c,#ffac33);
   border: 1px solid #feac32;
