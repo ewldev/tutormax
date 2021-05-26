@@ -58,6 +58,7 @@ nav ul li a {
   margin: .25em;
 }
 
+/* To defeat bootstrap default navbar-collapse flex-grow:1 */
 .navbar-collapse {
   flex-grow: unset;
 }
@@ -200,16 +201,10 @@ nav ul li a {
     margin-bottom: 70px;
     }
   
-  nav ul {
-    /* justify-content:flex-end; */
-    /* float: right; */
-    margin: 35px 40px 0 0;
-  }
-
   nav ul li a:link, nav ul li a:visited {
     border: .15em solid;
     color: white;
-    font-size: 1.05em;
+    font-size: .9em;
     transition: all .2s;
   }
   nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
@@ -222,13 +217,13 @@ nav ul li a {
     transition: all .2s;
   }
   .login:hover {
-    border: .15em solid #feac32;
+    /* border: .1em solid #feac32; */
     color: orangered;
   }
 
   .brand-img {
-   width: 70%; 
-   margin: 30px 0 0 100px; 
+   width: 230px; 
+   /* margin: 30px auto 0 100px;  */
   } 
 
   main {
