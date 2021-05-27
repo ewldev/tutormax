@@ -58,26 +58,27 @@ nav ul li a {
 
 /* login button */
 .login {
-  color: #2a2e31;
   font-size: .9em;
   text-transform: uppercase;
   letter-spacing: .1em;
   display: block;
   text-decoration: none;
-  border: 1px solid; 
-  padding: .5em 1em; 	
+  /* border: 1px solid;  */
+  padding: 8px 16px; 	
   border-radius: .5em; 
   margin: .25em;  
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c,#ffac33);
-  border: 1px solid #feac32;
+  /* border: 1px solid #feac32; */
+   /* color: #2a2e31; */
+  color: firebrick;
   transition: all .2s;
   margin-right: 3px;
 }
 .login:hover {
   background-color:  #fecc4c;
   background-image: none;
-  color: orangered;
+  color: firebrick;
 }
 
 .title {
@@ -101,7 +102,6 @@ nav ul li a {
   justify-content: center;
 }
 .home-btn {
-  color: #2a2e31;
   width: 138px;
   text-decoration: none;
   text-align: center;
@@ -110,7 +110,8 @@ nav ul li a {
   margin: .25em;
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c,#ffac33);
-  border: 3px solid #feac32;
+  /* border: 3px solid #feac32; */
+  color: #2a2e31;
   transition: all .2s;
 }
 .home-btn:hover {
@@ -160,19 +161,22 @@ nav ul li a {
 @media screen and (min-width: 768px){
   nav ul li {
     margin: 0 5px;
+    /* font-weight: 600; */
   }
-  nav ul li a {
-    margin: 0;
-}
+  
   .signup {
-    border: 1px solid rgb(254, 172, 50);
     border-radius: .5em; 
-    color: orange;
+    margin: .25em;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c,#ffac33);
+    /* border: 1px solid #feac32; */
+    color: firebrick;
+    transition: all .2s;
   }
   .signup:hover {
     background-color:  #fecc4c;
     background-image: none;
-    color: red;
+    color: firebrick;
   }
 }
 
@@ -213,14 +217,6 @@ nav ul li a {
     color: #ffac33;
   }
    
-  .login {
-    color: white;
-    transition: all .2s;
-  }
-  .login:hover {
-    color: orangered;
-  }
-
   main {
     max-width: 1200px;
     margin: auto;
