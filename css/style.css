@@ -43,6 +43,7 @@ nav, footer, .home-btn1, .home-btn2 {
 
 nav ul li {
   font-size: .9em;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
@@ -59,6 +60,7 @@ nav ul li a {
 /* login button */
 .login {
   font-size: .9em;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
   display: block;
