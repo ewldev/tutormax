@@ -1,6 +1,11 @@
 body {
-    background-color: #e5e5e5;
+    /* background-color: #e5e5e5; */
     padding-top: 80px;
+}
+
+nav {
+    background-color:  #7bcaff;
+    box-shadow: 0 1px 10px gray;
 }
 
 .card {
