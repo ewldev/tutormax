@@ -8,7 +8,24 @@ nav {
     box-shadow: 0 1px 10px gray;
 }
 
+.navbar-brand {
+    margin-top: -3px;
+    margin-right: auto;
+}
+
 .card {
     box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.3)
 }
 
+/* To defeat mdb default navbar-collapse flex-grow:1 to let nav items to be pushed to the right  */
+@media screen and (min-width: 768px) {
+    .navbar-collapse {
+        flex-grow: unset;
+      }
+}
+
+@media screen and (min-width: 992px){
+    .navbar-brand img {
+        margin-left: 30px;
+    }
+}    

@@ -52,7 +52,7 @@ nav ul li a {
   margin: .25em;
 }
 
-/* To defeat bootstrap default navbar-collapse flex-grow:1 */
+/* To defeat bootstrap default navbar-collapse flex-grow:1 to let nav items to be pushed to the right  */
 .navbar-collapse {
   flex-grow: unset;
 }
