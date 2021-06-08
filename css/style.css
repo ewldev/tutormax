@@ -32,7 +32,6 @@ header{
 } 
 
 .brand-img {
-  margin-left: 5px;
   margin-right: auto;
   width: 130px;  
 }
@@ -57,8 +56,8 @@ nav ul li a {
   flex-grow: unset;
 }
 
-/* login button */
-.login {
+/* signin button */
+.signin {
   font-size: .9em;
   font-weight: 600;
   text-transform: uppercase;
@@ -74,7 +73,7 @@ nav ul li a {
   transition: all .2s;
   margin-right: 3px;
 }
-.login:hover {
+.signin:hover {
   background-color:  #fecc4c;
   background-image: none;
   color: tomato;
@@ -175,8 +174,9 @@ nav ul li a {
     margin: 0 5px;
     /* font-weight: 600; */
   }
-  
+   
   .signup {
+    letter-spacing: .1em;
     border-radius: .5em; 
     background-color: #feac32;
     background-image: linear-gradient(#fecc4c,#ffac33);

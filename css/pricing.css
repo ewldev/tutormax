@@ -8,24 +8,90 @@ nav {
     box-shadow: 0 1px 10px gray;
 }
 
+nav ul li {
+    font-size: .9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+  }
+
 .navbar-brand {
     margin-top: -3px;
+    margin-left: 5px;
     margin-right: auto;
+    width: 130px;  
 }
+
+/* signin button */
+.signin {
+    font-size: .9em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px; 	
+    border-radius: .5em; 
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c,#ffac33);
+    color:tomato;
+    transition: all .2s;
+    margin-right: 3px;
+  }
+  .signin:hover {
+    background-color:  #fecc4c;
+    background-image: none;
+    color: tomato;
+  }
 
 .card {
     box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.3)
 }
 
+@media screen and (min-width: 375px) {
+    .navbar-brand {
+      margin-left: 20px;
+      width: 150px;  
+    }
+  }
+
 /* To defeat mdb default navbar-collapse flex-grow:1 to let nav items to be pushed to the right  */
 @media screen and (min-width: 768px) {
+    .navbar {
+        padding: 0;
+    }
     .navbar-collapse {
         flex-grow: unset;
       }
+    .nav-link {
+        margin-top: 6px;
+    }
+    .signin {
+        margin-right: 16px;
+    }  
 }
 
 @media screen and (min-width: 992px){
-    .navbar-brand img {
-        margin-left: 30px;
+    .navbar-brand {
+        margin-top: 10px;
+        margin-left: 100px;
+        width: 230px; 
     }
+    .navbar {
+        padding-bottom: 10px;
+    }
+    .signin {
+        margin-top: 10px;
+        margin-right: 15px;
+    }    
+    .nav-link {
+        margin-top: 8px;
+    }      
 }    
+
+@media screen and (min-width: 1200px){
+    .navbar-brand {
+        margin-left: 150px;
+        width: 280px; 
+    }     
+}
