@@ -130,8 +130,8 @@ nav ul li a {
 
 @media screen and (min-width: 375px) {
   .brand-img {
-    margin-left: 20px;
-    width: 150px;  
+    margin-left: 5px;
+    width: 170px;  
   }
 }
 
@@ -175,17 +175,11 @@ nav ul li a {
     margin: 0 5px;
     /* font-weight: 600; */
   }
-   
-  .signup {
-    letter-spacing: .1em;
-    border-radius: .5em; 
-    background-color: #feac32;
-    background-image: linear-gradient(#fecc4c,#ffac33);
-    transition: all .2s;
-  }
-  .signup:hover {
-    background-color:  #fecc4c;
-    background-image: none;
+
+  .brand-img {
+    margin-top: 10px;
+    margin-left: 60px;
+    width: 230px; 
   }
 
   .title {
@@ -198,11 +192,17 @@ nav ul li a {
     height: 900px;
   }
 
-  .brand-img {
-    margin-top: 10px;
-    margin-left: 100px;
-    width: 230px; 
-  } 
+  .signup {
+    letter-spacing: .1em;
+    border-radius: .5em; 
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c,#ffac33);
+    transition: all .2s;
+  }
+  .signup:hover {
+    background-color:  #fecc4c;
+    background-image: none;
+  }
 
   .title {
     margin-top: 30px;
