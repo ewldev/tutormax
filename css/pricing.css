@@ -55,24 +55,28 @@ nav ul li {
     }
   }
 
-/* To defeat mdb default navbar-collapse flex-grow:1 to let nav items to be pushed to the right  */
 @media screen and (min-width: 768px) {
+/* To defeat mdb default navbar-collapse flex-grow:1 to let nav items to be pushed to the right  */    
     .navbar-collapse {
         flex-grow: unset;
       }
+    .navbar-brand {
+        width: 230px;
+    }  
     .nav-link {
         margin-top: 6px;
     }
     .signin {
         margin-right: 16px;
     }  
+    main {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (min-width: 992px){
     .navbar-brand {
         margin-top: 10px;
-        margin-left: 100px;
-        width: 230px; 
     }
     .navbar {
         padding-top: 0;
@@ -84,7 +88,12 @@ nav ul li {
     }    
     .nav-link {
         margin-top: 8px;
-    }      
+    }     
+    
+    main {
+        margin-top: 180px;
+        margin-bottom: 332px;
+    }
 }    
 
 @media screen and (min-width: 1200px){
