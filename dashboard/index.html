@@ -20,7 +20,8 @@
     =========================================================
     * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     -->
-<link href="./main.css" rel="stylesheet"></head>
+    <link href="./main.css" rel="stylesheet">
+</head>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
@@ -63,7 +64,7 @@
                         <button class="close"></button>
                     </div>
                     <ul class="header-menu nav">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="javascript:void(0);" class="nav-link">
                                 <i class="nav-link-icon fa fa-database"> </i>
                                 Statistics
@@ -74,7 +75,7 @@
                                 <i class="nav-link-icon fa fa-edit"></i>
                                 Projects
                             </a>
-                        </li>
+                        </li> -->
                         <li class="dropdown nav-item">
                             <a href="javascript:void(0);" class="nav-link">
                                 <i class="nav-link-icon fa fa-cog"></i>
@@ -95,10 +96,8 @@
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
                                             <button type="button" tabindex="0" class="dropdown-item">User Account</button>
                                             <button type="button" tabindex="0" class="dropdown-item">Settings</button>
-                                            <h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                            <button type="button" tabindex="0" class="dropdown-item">Actions</button>
                                             <div tabindex="-1" class="dropdown-divider"></div>
-                                            <button type="button" tabindex="0" class="dropdown-item">Sign Out</button>
+                                            <a type="button" tabindex="0" class="dropdown-item" href="../signin/">Sign Out</a>
                                         </div>
                                     </div>
                                 </div>
@@ -434,11 +433,11 @@
                                 <li class="app-sidebar__heading">Main</li>
                                 <li>
                                     <a href="index.html" class="mm-active">
-                                        <i class="metismenu-icon pe-7s-rocket"></i>
+                                        <i class="metismenu-icon pe-7s-home"></i>
                                         Home
                                     </a>
                                     <a href="components-calendar.html">
-                                        <i class="metismenu-icon pe-7s-display2"></i>
+                                        <i class="metismenu-icon pe-7s-date"></i>
                                         Calendar
                                     </a>
                                 </li>
@@ -623,14 +622,6 @@
                                         Tables
                                     </a>
                                 </li>
-                                <li class="app-sidebar__heading">Payments</li>
-                                <li>
-                                    <a href="payment-dashboard
-.html">
-                                        <i class="metismenu-icon pe-7s-display2"></i>
-                                        Payments Dashboard
-                                    </a>
-                                </li>
                                 <li class="app-sidebar__heading">Tutoring Materials</li>
                                 <li>
                                     <a href="upload-materials.html">
@@ -638,23 +629,23 @@
                                         </i>Upload Materials
                                     </a>
                                 </li>
+                                <li class="app-sidebar__heading">Payments</li>
                                 <li>
-                                    <a href="forms-layouts.html">
-                                        <i class="metismenu-icon pe-7s-eyedropper">
-                                        </i>Forms Layouts
+                                    <a href="payment-dashboard.html">
+                                        <i class="metismenu-icon pe-7s-credit"></i>
+                                        Payments Dashboard
                                     </a>
                                 </li>
+                                <li class="app-sidebar__heading">Support</li>
                                 <li>
-                                    <a href="forms-validation.html">
-                                        <i class="metismenu-icon pe-7s-pendrive">
-                                        </i>Forms Validation
+                                    <a href="charts-chartjs.html">                                        
+                                        <i class="metismenu-icon pe-7s-user">                                                
+                                        </i>User Account
                                     </a>
-                                </li>
-                                <li class="app-sidebar__heading">Charts</li>
-                                <li>
+                                </li><li>
                                     <a href="charts-chartjs.html">
-                                        <i class="metismenu-icon pe-7s-graph2">
-                                        </i>ChartJS
+                                        <i class="metismenu-icon pe-7s-config">                                                
+                                        </i>Settings
                                     </a>
                                 </li>
                                 <li class="app-sidebar__heading">PRO Version</li>
@@ -945,7 +936,7 @@
                                                 <th>Name</th>
                                                 <th class="text-center">Sessions</th>
                                                 <th class="text-center">Fees</th>
-                                                <th class="text-center">Profiles</th>
+                                                <th class="text-center">Profile</th>
                                             </tr>
                                             </thead>
                                             <tbody>
