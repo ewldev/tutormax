@@ -20,7 +20,10 @@
     =========================================================
     * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     -->
-<link href="./main.css" rel="stylesheet"></head>
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="./main.css" rel="stylesheet">
+</head>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
@@ -63,18 +66,6 @@
                         <button class="close"></button>
                     </div>
                     <ul class="header-menu nav">
-                        <li class="nav-item">
-                            <a href="javascript:void(0);" class="nav-link">
-                                <i class="nav-link-icon fa fa-database"> </i>
-                                Statistics
-                            </a>
-                        </li>
-                        <li class="btn-group nav-item">
-                            <a href="javascript:void(0);" class="nav-link">
-                                <i class="nav-link-icon fa fa-edit"></i>
-                                Projects
-                            </a>
-                        </li>
                         <li class="dropdown nav-item">
                             <a href="javascript:void(0);" class="nav-link">
                                 <i class="nav-link-icon fa fa-cog"></i>
@@ -117,287 +108,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>        </div>
-            </div>
-        </div>        <div class="ui-theme-settings">
-            <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
-                <i class="fa fa-cog fa-w-16  fa-2x"></i>
-            </button>
-            <div class="theme-settings__inner">
-                <div class="scrollbar-container">
-                    <div class="theme-settings__options-wrapper">
-                        <h3 class="themeoptions-heading">Layout Options
-                        </h3>
-                        <div class="p-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <div class="widget-content p-0">
-                                        <div class="widget-content-wrapper">
-                                            <div class="widget-content-left mr-3">
-                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
-                                                    <div class="switch-animate switch-on">
-                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content-left">
-                                                <div class="widget-heading">Fixed Header
-                                                </div>
-                                                <div class="widget-subheading">Makes the header top fixed, always visible!
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="widget-content p-0">
-                                        <div class="widget-content-wrapper">
-                                            <div class="widget-content-left mr-3">
-                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
-                                                    <div class="switch-animate switch-on">
-                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content-left">
-                                                <div class="widget-heading">Fixed Sidebar
-                                                </div>
-                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="widget-content p-0">
-                                        <div class="widget-content-wrapper">
-                                            <div class="widget-content-left mr-3">
-                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
-                                                    <div class="switch-animate switch-off">
-                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content-left">
-                                                <div class="widget-heading">Fixed Footer
-                                                </div>
-                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="themeoptions-heading">
-                            <div>
-                                Header Options
-                            </div>
-                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
-                                Restore Default
-                            </button>
-                        </h3>
-                        <div class="p-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h5 class="pb-2">Choose Color Scheme
-                                    </h5>
-                                    <div class="theme-settings-swatches">
-                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
-                                        </div>
-                                        <div class="divider">
-                                        </div>
-                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="themeoptions-heading">
-                            <div>Sidebar Options</div>
-                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
-                                Restore Default
-                            </button>
-                        </h3>
-                        <div class="p-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h5 class="pb-2">Choose Color Scheme
-                                    </h5>
-                                    <div class="theme-settings-swatches">
-                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
-                                        </div>
-                                        <div class="divider">
-                                        </div>
-                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
-                                        </div>
-                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="themeoptions-heading">
-                            <div>Main Content Options</div>
-                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
-                            </button>
-                        </h3>
-                        <div class="p-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h5 class="pb-2">Page Section Tabs
-                                    </h5>
-                                    <div class="theme-settings-swatches">
-                                        <div role="group" class="mt-2 btn-group">
-                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
-                                                Line
-                                            </button>
-                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
-                                                Shadow
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                    </div>   
                     </div>
-                </div>
             </div>
-        </div>        <div class="app-main">
+        </div>        
+        
+        <div class="app-main">
                 <div class="app-sidebar sidebar-shadow">
                     <div class="app-header__logo">
                         <div class="logo-src"></div>
@@ -431,241 +147,51 @@
                     </div>    <div class="scrollbar-sidebar">
                         <div class="app-sidebar__inner">
                             <ul class="vertical-nav-menu">
-                                <li class="app-sidebar__heading">Dashboards</li>
+                                <li class="app-sidebar__heading">Main</li>
                                 <li>
                                     <a href="index.html">
-                                        <i class="metismenu-icon pe-7s-rocket"></i>
+                                        <i class="metismenu-icon pe-7s-home"></i>
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="components-calendar.html">
-                                        <i class="metismenu-icon pe-7s-display2">
+                                    <a href="calendar.html">
+                                        <i class="metismenu-icon pe-7s-date">
                                         </i>Calendar
                                     </a>
                                 </li>
-                                <li class="app-sidebar__heading">UI Components</li>
-                                <li
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                >
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-diamond"></i>
-                                        Elements
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    >
-                                        <li>
-                                            <a href="elements-buttons-standard.html">
-                                                <i class="metismenu-icon"></i>
-                                                Buttons
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-dropdowns.html">
-                                                <i class="metismenu-icon">
-                                                </i>Dropdowns
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-icons.html">
-                                                <i class="metismenu-icon">
-                                                </i>Icons
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-badges-labels.html">
-                                                <i class="metismenu-icon">
-                                                </i>Badges
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-cards.html">
-                                                <i class="metismenu-icon">
-                                                </i>Cards
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-list-group.html">
-                                                <i class="metismenu-icon">
-                                                </i>List Groups
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-navigation.html">
-                                                <i class="metismenu-icon">
-                                                </i>Navigation Menus
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-utilities.html">
-                                                <i class="metismenu-icon">
-                                                </i>Utilities
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                >
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-car"></i>
-                                        Components
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    >
-                                        <li>
-                                            <a href="components-tabs.html">
-                                                <i class="metismenu-icon">
-                                                </i>Tabs
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-accordions.html">
-                                                <i class="metismenu-icon">
-                                                </i>Accordions
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-notifications.html">
-                                                <i class="metismenu-icon">
-                                                </i>Notifications
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-modals.html">
-                                                <i class="metismenu-icon">
-                                                </i>Modals
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-progress-bar.html">
-                                                <i class="metismenu-icon">
-                                                </i>Progress Bar
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-tooltips-popovers.html">
-                                                <i class="metismenu-icon">
-                                                </i>Tooltips &amp; Popovers
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-carousel.html">
-                                                <i class="metismenu-icon">
-                                                </i>Carousel
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-calendar.html">
-                                                <i class="metismenu-icon">
-                                                </i>Calendar
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-pagination.html">
-                                                <i class="metismenu-icon">
-                                                </i>Pagination
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-scrollable-elements.html">
-                                                <i class="metismenu-icon">
-                                                </i>Scrollable
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="components-maps.html">
-                                                <i class="metismenu-icon">
-                                                </i>Maps
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li  >
-                                    <a href="tables-regular.html">
-                                        <i class="metismenu-icon pe-7s-display2"></i>
-                                        Tables
+                                <li class="app-sidebar__heading">Tutoring Materials</li>
+                                <li>
+                                    <a href="materials-dashboard.html">
+                                        <i class="metismenu-icon pe-7s-notebook">
+                                        </i>Materials Dashboard
                                     </a>
                                 </li>
-                                <li class="app-sidebar__heading">Payment</li>
+                                <li class="app-sidebar__heading">Payments</li>
                                 <li>
                                     <a href="payment-dashboard.html">
-                                        <i class="metismenu-icon pe-7s-display2"></i>
-                                        Payment Dashboard
+                                        <i class="metismenu-icon pe-7s-credit"></i>
+                                        Payments Dashboard
                                     </a>
                                 </li>
-                                <li class="app-sidebar__heading">Turoring Materials</li>
+                                <li class="app-sidebar__heading">Support</li>
                                 <li>
-                                    <a href="upload-materials.html" class="mm-active">
-                                        <i class="metismenu-icon pe-7s-mouse">
-                                        </i>Upload Materials
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="forms-layouts.html">
-                                        <i class="metismenu-icon pe-7s-eyedropper">
-                                        </i>Forms Layouts
+                                    <a href="">                                        
+                                        <i class="metismenu-icon pe-7s-user">                                                
+                                        </i>User Account
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="forms-validation.html">
-                                        <i class="metismenu-icon pe-7s-pendrive">
-                                        </i>Forms Validation
+                                    <a href="">
+                                        <i class="metismenu-icon pe-7s-config">                                                
+                                        </i>Settings
+                                    </a>
+                                    <a href="">                                        
+                                        <i class="metismenu-icon pe-7s-mail">                                                
+                                        </i>Contact Support
                                     </a>
                                 </li>
-                                <li class="app-sidebar__heading">Charts</li>
-                                <li>
-                                    <a href="charts-chartjs.html">
-                                        <i class="metismenu-icon pe-7s-graph2">
-                                        </i>ChartJS
-                                    </a>
-                                </li>
-                                <li class="app-sidebar__heading">PRO Version</li>
-                                <li>
-                                    <a href="https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/" target="_blank">
-                                        <i class="metismenu-icon pe-7s-graph2">
-                                        </i>
-                                        Upgrade to PRO
-                                    </a>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -674,19 +200,20 @@
                         <div class="app-page-title">
                             <div class="page-title-wrapper">
                                 <div class="page-title-heading">
-                                    <div class="page-title-icon">
+                                    <!-- <div class="page-title-icon">
                                         <i class="pe-7s-display1 icon-gradient bg-premium-dark">
                                         </i>
-                                    </div>
+                                    </div> -->
                                     <div>Tutoring Materials
                                         <div class="page-title-subheading">
+                                        Dashboard to view and upload your materials    
                                         </div>
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
-                                    <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
+                                    <!-- <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
                                         <i class="fa fa-star"></i>
-                                    </button>
+                                    </button> -->
                                     <div class="d-inline-block dropdown">
                                         <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
                                             <span class="btn-icon-wrapper pr-2 opacity-7">
@@ -713,7 +240,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="javascript:void(0);" class="nav-link">
+                                                    <a href="calendar.html" class="nav-link">
                                                         <i class="nav-link-icon lnr-picture"></i>
                                                         <span>
                                                             Calendar
@@ -738,11 +265,7 @@
                                             </button>
                                         </div>
                                         <div data-parent="#accordion" id="collapseOne1" aria-labelledby="headingOne" class="collapse show">
-                                            <div class="card-body">1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                                                nesciunt
-                                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                                VHS.
+                                            <div class="card-body">Material description
                                             </div>
                                             <button class="mb-4 ml-4 btn btn-info">Download</button>
                                         </div>
@@ -753,11 +276,7 @@
                                                 #2</h5></button>
                                         </div>
                                         <div data-parent="#accordion" id="collapseOne2" class="collapse">
-                                            <div class="card-body">2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                                                nesciunt
-                                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                                VHS.
+                                            <div class="card-body">Material description
                                             </div>
                                             <button class="mb-4 ml-4 btn btn-info">Download</button>
                                         </div>
@@ -767,11 +286,7 @@
                                             <button type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseThree" class="text-left m-0 p-0 btn btn-link btn-block"><h5 class="m-0 p-0">Item #3</h5></button>
                                         </div>
                                         <div data-parent="#accordion" id="collapseOne3" class="collapse">
-                                            <div class="card-body">3. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                                                nesciunt
-                                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                                VHS.
+                                            <div class="card-body">Material description
                                             </div>
                                             <button class="mb-4 ml-4 btn btn-info">Download</button>
                                         </div>
@@ -780,14 +295,14 @@
                             </div>
                         </div>
 
-                        <div class="tab-content">
+                        <div class="mb-3 tab-content">
                             <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="main-card mb-3 card">
                                             <div class="card-body"><h5 class="card-title">Upload Materials</h5>
                                                 <form class="">
-                                                    <div class="position-relative form-group"><label for="exampleText" class="">Note about this file</label><textarea name="text" id="exampleText" class="form-control"></textarea></div>
+                                                    <div class="position-relative form-group"><label for="exampleText" class="">Add a material description</label><textarea name="text" id="exampleText" class="form-control"></textarea></div>
                                                     <div class="position-relative form-group"><label for="exampleFile" class="">File</label><input name="file" id="exampleFile" type="file" class="form-control-file">
                                                         <!-- <small class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small> -->
                                                     </div>
@@ -799,300 +314,40 @@
                                     
                                 </div>
                             </div>
-                            <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body"><h5 class="card-title">Input Groups</h5>
-                                                <div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend"><span class="input-group-text">@</span></div>
-                                                        <input placeholder="username" type="text" class="form-control"></div>
-                                                    <br>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend"><span class="input-group-text"><input aria-label="Checkbox for following text input" type="checkbox" class=""></span></div>
-                                                        <input placeholder="Check it out" type="text" class="form-control"></div>
-                                                    <br>
-                                                    <div class="input-group"><input placeholder="username" type="text" class="form-control">
-                                                        <div class="input-group-append"><span class="input-group-text">@example.com</span></div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend"><span class="input-group-text">$</span><span class="input-group-text">$</span></div>
-                                                        <input placeholder="Dolla dolla billz yo!" type="text" class="form-control">
-                                                        <div class="input-group-append"><span class="input-group-text">$</span><span class="input-group-text">$</span></div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-                                                        <input placeholder="Amount" step="1" type="number" class="form-control">
-                                                        <div class="input-group-append"><span class="input-group-text">.00</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body"><h5 class="card-title">Input Group Button Dropdown</h5>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary">Button Dropdown</button>
-                                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                                            <button type="button" disabled="" tabindex="-1" class="disabled dropdown-item">Action</button>
-                                                            <button type="button" tabindex="0" class="dropdown-item">Another Action</button>
-                                                            <div tabindex="-1" class="dropdown-divider"></div>
-                                                            <button type="button" tabindex="0" class="dropdown-item">Another Action</button>
-                                                        </div>
-                                                    </div>
-                                                    <input type="text" class="form-control"></div>
-                                            </div>
-                                        </div>
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body"><h5 class="card-title">Input Group Button Shorthand</h5>
-                                                <div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <button class="btn btn-secondary">To the Left!</button>
-                                                        </div>
-                                                        <input type="text" class="form-control"></div>
-                                                    <br>
-                                                    <div class="input-group"><input type="text" class="form-control">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-secondary">To the Right!</button>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <button class="btn btn-danger">To the Left!</button>
-                                                        </div>
-                                                        <input placeholder="and..." type="text" class="form-control">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-success">To the Right!</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body"><h5 class="card-title">Input Group Sizing</h5>
-                                                <div>
-                                                    <div class="input-group input-group-lg">
-                                                        <div class="input-group-prepend"><span class="input-group-text">@lg</span></div>
-                                                        <input type="text" class="form-control"></div>
-                                                    <br>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend"><span class="input-group-text">@normal</span></div>
-                                                        <input type="text" class="form-control"></div>
-                                                    <br>
-                                                    <div class="input-group input-group-sm">
-                                                        <div class="input-group-prepend"><span class="input-group-text">@sm</span></div>
-                                                        <input type="text" class="form-control"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body"><h5 class="card-title">Input Group Addon</h5>
-                                                <div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend"><span class="input-group-text">To the Left!</span></div>
-                                                        <input type="text" class="form-control"></div>
-                                                    <br>
-                                                    <div class="input-group"><input type="text" class="form-control">
-                                                        <div class="input-group-append"><span class="input-group-text">To the Right!</span></div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend"><span class="input-group-text">To the Left!</span></div>
-                                                        <input placeholder="and..." type="text" class="form-control">
-                                                        <div class="input-group-append"><span class="input-group-text">To the Right!</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body"><h5 class="card-title">Input Group Button</h5>
-                                                <div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <button class="btn btn-secondary">I'm a button</button>
-                                                        </div>
-                                                        <input type="text" class="form-control"></div>
-                                                    <br>
-                                                    <div class="input-group"><input type="text" class="form-control">
-                                                        <div class="input-group-append">
-                                                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary">Button Dropdown</button>
-                                                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                                                <button type="button" disabled="" tabindex="-1" class="disabled dropdown-item">Action</button>
-                                                                <button type="button" tabindex="0" class="dropdown-item">Another Action</button>
-                                                                <div tabindex="-1" class="dropdown-divider"></div>
-                                                                <button type="button" tabindex="0" class="dropdown-item">Another Action</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <button class="btn btn-outline-secondary">Split Button</button>
-                                                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle dropdown-toggle-split btn btn-outline-secondary"><span
-                                                                    class="sr-only">Toggle Dropdown</span></button>
-                                                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                                                <button type="button" disabled="" tabindex="-1" class="disabled dropdown-item">Action</button>
-                                                                <button type="button" tabindex="0" class="dropdown-item">Another Action</button>
-                                                                <div tabindex="-1" class="dropdown-divider"></div>
-                                                                <button type="button" tabindex="0" class="dropdown-item">Another Action</button>
-                                                            </div>
-                                                        </div>
-                                                        <input placeholder="and..." type="text" class="form-control">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-secondary">I'm a button</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
-                                <form class="">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="main-card mb-3 card">
-                                                <div class="card-body"><h5 class="card-title">Checkboxes</h5>
-                                                    <div class="position-relative form-group">
-                                                        <div>
-                                                            <div class="custom-checkbox custom-control"><input type="checkbox" id="exampleCustomCheckbox" class="custom-control-input"><label class="custom-control-label" for="exampleCustomCheckbox">Check this
-                                                                custom checkbox</label></div>
-                                                            <div class="custom-checkbox custom-control"><input type="checkbox" id="exampleCustomCheckbox2" class="custom-control-input"><label class="custom-control-label" for="exampleCustomCheckbox2">Or this
-                                                                one</label></div>
-                                                            <div class="custom-checkbox custom-control"><input type="checkbox" id="exampleCustomCheckbox3" disabled="" class="custom-control-input"><label class="custom-control-label" for="exampleCustomCheckbox3">But
-                                                                not this disabled one</label></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="main-card mb-3 card">
-                                                <div class="card-body"><h5 class="card-title">Inline</h5>
-                                                    <div class="position-relative form-group">
-                                                        <div>
-                                                            <div class="custom-checkbox custom-control custom-control-inline"><input type="checkbox" id="exampleCustomInline" class="custom-control-input"><label class="custom-control-label"
-                                                                                                                                                                                                                  for="exampleCustomInline">An inline custom
-                                                                input</label></div>
-                                                            <div class="custom-checkbox custom-control custom-control-inline"><input type="checkbox" id="exampleCustomInline2" class="custom-control-input"><label class="custom-control-label"
-                                                                                                                                                                                                                   for="exampleCustomInline2">and another one</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="main-card mb-3 card">
-                                                <div class="card-body"><h5 class="card-title">Radios</h5>
-                                                    <div class="position-relative form-group">
-                                                        <div>
-                                                            <div class="custom-radio custom-control"><input type="radio" id="exampleCustomRadio" name="customRadio" class="custom-control-input"><label class="custom-control-label" for="exampleCustomRadio">Select
-                                                                this custom radio</label></div>
-                                                            <div class="custom-radio custom-control"><input type="radio" id="exampleCustomRadio2" name="customRadio" class="custom-control-input"><label class="custom-control-label" for="exampleCustomRadio2">Or
-                                                                this one</label></div>
-                                                            <div class="custom-radio custom-control"><input type="radio" id="exampleCustomRadio3" disabled="" class="custom-control-input"><label class="custom-control-label" for="exampleCustomRadio3">But not this
-                                                                disabled one</label></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="main-card mb-3 card">
-                                                <div class="card-body"><h5 class="card-title">Form Select</h5>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="position-relative form-group"><label for="exampleCustomSelect" class="">Custom Select</label><select type="select" id="exampleCustomSelect" name="customSelect" class="custom-select">
-                                                                <option value="">Select</option>
-                                                                <option>Value 1</option>
-                                                                <option>Value 2</option>
-                                                                <option>Value 3</option>
-                                                                <option>Value 4</option>
-                                                                <option>Value 5</option>
-                                                            </select></div>
-                                                            <div class="position-relative form-group"><label for="exampleCustomMutlipleSelect" class="">Custom Multiple Select</label><select multiple="" type="select" id="exampleCustomMutlipleSelect"
-                                                                                                                                                                                              name="customSelect" class="custom-select">
-                                                                <option value="">Select</option>
-                                                                <option>Value 1</option>
-                                                                <option>Value 2</option>
-                                                                <option>Value 3</option>
-                                                                <option>Value 4</option>
-                                                                <option>Value 5</option>
-                                                            </select></div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="position-relative form-group"><label for="exampleCustomSelectDisabled" class="">Custom Select Disabled</label><select type="select" id="exampleCustomSelectDisabled" name="customSelect"
-                                                                                                                                                                                              disabled="" class="custom-select">
-                                                                <option value="">Select</option>
-                                                                <option>Value 1</option>
-                                                                <option>Value 2</option>
-                                                                <option>Value 3</option>
-                                                                <option>Value 4</option>
-                                                                <option>Value 5</option>
-                                                            </select></div>
-                                                            <div class="position-relative form-group"><label for="exampleCustomMutlipleSelectDisabled" class="">Custom Multiple Select Disabled</label><select multiple="" type="select"
-                                                                                                                                                                                                               id="exampleCustomMutlipleSelectDisabled"
-                                                                                                                                                                                                               name="customSelect" disabled="" class="custom-select">
-                                                                <option value="">Select</option>
-                                                                <option>Value 1</option>
-                                                                <option>Value 2</option>
-                                                                <option>Value 3</option>
-                                                                <option>Value 4</option>
-                                                                <option>Value 5</option>
-                                                            </select></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                            
                         </div>
-                    </div>
-                    <div class="app-wrapper-footer">
-                        <div class="app-footer">
-                            <div class="app-footer__inner">
-                                <div class="app-footer-left">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                Footer Link 1
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                Footer Link 2
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="app-footer-right">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                Footer Link 3
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                <div class="badge badge-success mr-1 ml-0">
-                                                    <small>NEW</small>
-                                                </div>
-                                                Footer Link 4
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    </div>
+                    </div>                    
+                </div>
         </div>
     </div>
-<script type="text/javascript" src="./assets/scripts/main.js"></script></body>
+    <hr class="m-0" />
+    <footer>
+        
+    <div class="text-center py-4 align-items-center">
+      <p>Follow TutorMax on social media</p>
+      <a href="https://www.youtube.com/channel" class="btn btn-primary m-1" role="button"
+        rel="nofollow" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram/" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+           © 2021 Copyright:
+           <a class="text-dark" href="https://tutormax.ca/">TutorMax.ca</a>
+         </div>
+    </footer>  
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
 </html>
