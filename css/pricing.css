@@ -13,7 +13,7 @@ nav ul li {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .2em;
-  }
+}
 
 .navbar-brand {
     margin-top: -3px;
@@ -57,6 +57,10 @@ nav ul li {
 
 @media screen and (min-width: 768px) {
 /* To defeat mdb default navbar-collapse flex-grow:1 to let nav items to be pushed to the right  */    
+    nav ul li {
+        margin: 0 8px;
+    /* font-weight: 600; */
+    }
     .navbar-collapse {
         flex-grow: unset;
       }
