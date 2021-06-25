@@ -16,10 +16,12 @@ nav ul li {
 }
 
 .navbar-brand {
+    margin-right: auto;
+}
+.navbar-brand img {
     margin-top: -3px;
     margin-left: 5px;
-    margin-right: auto;
-    width: 130px;  
+    width: 130px;
 }
 
 /* signin button */
@@ -49,9 +51,9 @@ nav ul li {
 }
 
 @media screen and (min-width: 375px) {
-    .navbar-brand {
-      margin-left: 20px;
-      width: 150px;  
+    .navbar-brand img {
+        margin-left: 20px;
+        width: 150px;
     }
   }
 
@@ -64,7 +66,7 @@ nav ul li {
     .navbar-collapse {
         flex-grow: unset;
       }
-    .navbar-brand {
+    .navbar-brand img {
         width: 230px;
     }  
     .nav-link {
@@ -105,8 +107,11 @@ nav ul li {
 }    
 
 @media screen and (min-width: 1200px){
-    .navbar-brand {
+    /* .navbar-brand {
         margin-left: 150px;
-        width: 280px; 
+    }    */
+    .navbar-brand img {
+        margin-left: 150px;
+        width: 280px;
     }     
 }
