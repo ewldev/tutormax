@@ -143,10 +143,10 @@ footer a {
   .title {
     margin-top: 15px;
   }
-  /* Provide more margin between two button1*/
-  /* .home-btn {
-    margin: .25em .8em;
-  } */
+
+  .signin {
+    margin-right: 10px;
+  }
 }  
 
 @media screen and (min-width: 576px) {
