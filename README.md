@@ -1,6 +1,9 @@
 # Tutormax
 
-Front end for online tutoring platform 
+Demo:
+https://ewldev.github.io/tutormax
+
+Front end design for online tutoring platform 
 
 Created with HTML CSS plus:
 
@@ -9,4 +12,7 @@ https://getbootstrap.com/
 
 Material Design for Bootstrap v3.7.1
 https://mdbootstrap.com/
+
+ArchitectUI HTML Theme Dashboard - v1.0.0
+https://dashboardpack.com 
 
